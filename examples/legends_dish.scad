@@ -16,11 +16,12 @@ $font_size = 4;
 for (x=[0,1,2,3,4]) {
   for(y=[1,2,3])
   translate_u(y * y / 2,x) {
+  resin()
     u(y) cherry_row(x)
     legend(legends[0], [-1,-1]) {
       legend(legends[1], [1,-1]) {
         legend(legends[2], [-1,1]) {
-          legend(legends[3], [-.8,0]) {
+          legend(legends[3], [0,0]) {
             key();
           }
         }
